@@ -94,7 +94,7 @@ export default function Home() {
 
       <footer className="py-6 text-center text-gray-600 text-xs border-t border-white/5 backdrop-blur-sm">
         <p>
-          &copy; 2025 {t("footer.copyright")}{" "}
+          &copy; {new Date().getFullYear()} {t("footer.copyright")}{" "}
           <a
             href="https://www.kazimaydin.dev/"
             target="_blank"
