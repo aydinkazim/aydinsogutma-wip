@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
+import { Mail, Phone } from "lucide-react";
 
 export default function HeroSection() {
   const { t } = useLanguage();
@@ -36,18 +37,24 @@ export default function HeroSection() {
         {t("hero.descriptionSuffix")}
       </p>
 
-      <div className="flex flex-col sm:flex-row items-center gap-6 justify-center lg:justify-start">
+      <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
+        <a
+          href="tel:+905448664224"
+          className="group relative px-8 py-4 bg-primary text-bg-dark font-bold rounded-lg overflow-hidden hover:shadow-[0_0_20px_rgba(0,242,255,0.4)] transition-all duration-300 w-full sm:w-auto flex items-center justify-center gap-2"
+        >
+          <Phone size={20} className="group-hover:rotate-12 transition-transform" />
+          {t("hero.call")}
+        </a>
+        
         <a
           href="mailto:info@aydinsogutma.com"
-          className="group relative px-8 py-4 bg-transparent text-primary font-bold border border-primary/50 rounded-lg overflow-hidden hover:border-primary transition-all duration-300 w-full sm:w-auto"
+          className="group relative px-8 py-4 bg-transparent text-white/80 font-bold border border-white/20 rounded-lg overflow-hidden hover:border-white/40 hover:text-white transition-all duration-300 w-full sm:w-auto"
         >
           <span className="relative z-10 flex items-center justify-center gap-2">
+            <Mail size={20} />
             {t("hero.cta")}
-            <span className="group-hover:translate-x-1 transition-transform">
-              →
-            </span>
           </span>
-          <div className="absolute inset-0 bg-primary/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out" />
+          <div className="absolute inset-0 bg-white/5 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out" />
         </a>
       </div>
     </motion.div>

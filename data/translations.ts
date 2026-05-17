@@ -11,7 +11,9 @@ export const translations = {
             description: "Endüstriyel soğutma çözümlerinde devrim yaratıyoruz.",
             descriptionHighlight: "Akıllı, verimli ve sürdürülebilir",
             descriptionSuffix: "teknolojilerle tanışmaya hazırlanın.",
-            cta: "Bize Ulaşın",
+            cta: "E-posta Gönder",
+            call: "Hemen Arayın",
+            whatsapp: "WhatsApp'tan Yazın",
         },
         features: {
             card1: {
@@ -40,7 +42,9 @@ export const translations = {
             description: "Revolutionizing industrial cooling solutions.",
             descriptionHighlight: "Smart, efficient, and sustainable",
             descriptionSuffix: "technologies are coming soon.",
-            cta: "Contact Us",
+            cta: "Send Email",
+            call: "Call Now",
+            whatsapp: "Chat on WhatsApp",
         },
         features: {
             card1: {

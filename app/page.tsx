@@ -6,6 +6,7 @@ import { Snowflake, ShieldCheck } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import FeatureCard from "@/components/FeatureCard";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { useLanguage } from "@/context/LanguageContext";
 
 export default function Home() {
@@ -91,6 +92,8 @@ export default function Home() {
           </motion.div>
         </div>
       </main>
+
+      <WhatsAppButton />
 
       <footer className="py-6 text-center text-gray-600 text-xs border-t border-white/5 backdrop-blur-sm">
         <p>
